@@ -1,0 +1,14 @@
+.nav_pag{
+    margin: 0 auto;
+}
+
+.redes_sociais{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.tamanho_nav{
+    width: 1200px;
+}
