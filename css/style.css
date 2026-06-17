@@ -1,14 +1,36 @@
-.nav_pag{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hr_eventos{
+    width: 95%;
+    height: 3px;
+    background-color: #6c718f;
+    margin: 2.5%;
+}
+
+.nav_tamanho{
+    width: 1200px;
     margin: 0 auto;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0;
 }
 
 .redes_sociais{
     display: flex;
-    list-style: none;
-    text-decoration: none;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.tamanho_nav{
-    width: 1200px;
+.redes_sociais_itens{
+    margin: 10px;
+}
+
+.nav_topo{
+    background: rgba(249, 249, 249, 0.98);
+    width: 100%;
+    padding: 0 !important;
 }
