@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hr_eventos{
+    width: 95%;
+    height: 1px;
+    background-color: #6c718f;
+    margin: 2.5%;
+}
+
+.nav_tamanho{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.redes_sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.redes_sociais_itens{
+    margin-right: 25px;
+}
+
+.redes_sociais_itens:hover{
+    opacity: 0.6;
+}
+
+.nav_topo{
+    display: flex;
+    border: #6c718f;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.nav-item{
+    margin-left: 1rem;
+    font-size: large;
+}
+
+.banner-mobile{
+
+}
+
+.banner{
+
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 576px){
+    .banner-mobile{
+        display: none;
+    }
+
+    .banner{
+        display: block;
+    }
+}
+
+
+@media (min-width: 992px){
+    .hr_eventos{
+        display: none;
+    }
+    
+    .redes_sociais{
+        display: none;
+    }
+}

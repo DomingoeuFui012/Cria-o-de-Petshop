@@ -15,38 +15,37 @@
     <header>
         <!-- Navegação -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid nav_tamanho">
+            <div class="container-fluid nav_tamanho ">
 
                 <!-- Logo da marca -->
-                <a class="navbar-brand" href="#">
-                    <img src="./img/img-logo-nexgard.png" alt="Logo da marca Nexgard">
-                </a>
+                <a class="navbar-brand" href="#"><img src="./img/img-logo-nexgard.png" alt="Logo da marca Nexgard"></a>
 
+                <!-- Não sei -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse nav_topo" id="navbarSupportedContent">
 
-                    <!-- Navegação Conteúdo do Hambúrguer -->
+                    <!-- Navegação Conteudo do Hamburguer -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
+                        <!-- Redes sociais -->
+                        <div class="redes_sociais">
+                            <li class="nav-item redes_sociais_itens">
+                                <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+                            </li>
+                            <li class="nav-item redes_sociais_itens">
+                                <a class="nav-link active" aria-current="page" href="#">Facebook</a>
+                            </li>
+                        </div>
 
-                        <!-- Redes sociais (só aparecem dentro do menu mobile/hambúrguer) -->
-                        <li class="nav-item d-lg-none">
-                            <div class="redes_sociais">
-                                <a class="nav-link redes_sociais_itens" href="#">Instagram</a>
-                                <a class="nav-link redes_sociais_itens" href="#">Facebook</a>
-                            </div>
-                        </li>
-                        <li class="d-lg-none"><hr class="hr_eventos"></li>
-
-                        <!-- Primeiro Dropdown -->
+                        <!-- 2 Dropdown - Primeiro Dropdown -->
+                        <hr class="hr_eventos">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Família NexGard
+                                Familia NexGard
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Todos os produtos</a></li>
@@ -55,9 +54,9 @@
                                 <li><a class="dropdown-item" href="#">NEXGARD COMBO</a></li>
                             </ul>
                         </li>
-                        <li class="d-lg-none"><hr class="hr_eventos"></li>
 
                         <!-- Segundo Dropdown -->
+                        <hr class="hr_eventos">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -69,46 +68,57 @@
                                 <li><a class="dropdown-item" href="#">Carrapatos</a></li>
                                 <li><a class="dropdown-item" href="#">Sarnas</a></li>
                                 <li><a class="dropdown-item" href="#">Vermes intestinais</a></li>
+
                             </ul>
                         </li>
-                        <li class="d-lg-none"><hr class="hr_eventos"></li>
 
-                        <!-- Demais links -->
-                        <li class="nav-item"><a class="nav-link" href="#">Filhotes</a></li>
-                        <li class="d-lg-none"><hr class="hr_eventos"></li>
+                        <!-- Lista de outros links da nav -->
+                        <hr class="hr_eventos">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Filhotes</a>
+                        </li>
+                        <hr class="hr_eventos">
 
-                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                        <li class="d-lg-none"><hr class="hr_eventos"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <hr class="hr_eventos">
 
-                        <li class="nav-item"><a class="nav-link" href="#">Onde Comprar</a></li>
-                        <li class="d-lg-none"><hr class="hr_eventos"></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Onde Comprar</a>
+                        </li>
+                        <hr class="hr_eventos">
 
-                        <li class="nav-item"><a class="nav-link" href="#">Compre Online</a></li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Compre Online</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
-        <!-- Banner: uma única <picture>, troca de imagem conforme o tamanho de tela -->
-        <div class="banner-wrapper">
-            <picture>
-                <!-- Telas a partir de 768px (tablet/desktop) -->
-                <source media="(min-width: 768px)" srcset="./img/Nexgard-Banner-menor.jpg">
-                <!-- Fallback / mobile: troque pelo arquivo do crop mobile quando tiver um -->
-                <img src="./img/Nexgard-Banner-menor.jpg"
-                    alt="Nexgard Spectra é outro nível de proteção"
-                    class="banner-img">
+        <!-- Banner -->
+        <div class="banner-mobile">
+            <picture><img src="./img/Nexgard-Banner-menor.jpg" alt="Nexgard Spectra é outro nível de proteção" class="img-fluid w-100">
             </picture>
-
-            <div class="conteudo-banner">
-                <h3>NEXGARD SPECTRA</h3>
-                <p>É OUTRO NÍVEL DE PROTEÇÃO</p>
-            </div>
         </div>
+        <div class="banner">
+            <picture>
+                <img src="./img/Nexgard-Banner-menor.jpg" alt="Nexgard Spectra é outro nível de proteção" class="img-fluid">
+            </picture>
+        </div>
+        <div class="conteudo-banner">
+            <h3>NEXGARD SPECTRA </h3>
+            <br></br>
+            <p>É OUTRO NÍVEL DE PROTEÇÃO</p>
+        </div>
+
+
     </main>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

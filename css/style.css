@@ -1,81 +1,94 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.hr_eventos{
-    width: 95%;
-    height: 1px;
-    background-color: #6c718f;
-    margin: 2.5%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav_tamanho{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    background-color: rgba(255, 255, 255, 1);
-}
+/* ===== NAVBAR ===== */
 
-.redes_sociais{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.redes_sociais_itens{
-    margin-right: 25px;
-}
-
-.redes_sociais_itens:hover{
-    opacity: 0.6;
-}
-
-.nav_topo{
-    display: flex;
-    border: #6c718f;
-    width: 100%;
-    padding: 0 !important;
-}
-
-.nav-item{
-    margin-left: 1rem;
-    font-size: large;
-}
-
-.banner-mobile{
-    position: absolute;
-}
-
-.banner{
-    position: absolute;
-    display: none;
-}
-
-.navbar{
+.navbar {
     padding: 0;
     margin: 0;
 }
 
-@media (min-width: 576px){
-    .banner-mobile{
-        display: none;
-    }
-
-    .banner{
-        display: block;
-    }
+.nav_tamanho {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
 }
 
+.nav_topo {
+    display: flex;
+    width: 100%;
+    padding: 0 !important;
+}
 
-@media (min-width: 992px){
-    .hr_eventos{
-        display: none;
-    }
-    
-    .redes_sociais{
-        display: none;
-    }
+.nav-item {
+    margin-left: 1rem;
+    font-size: large;
+}
+
+.hr_eventos {
+    width: 95%;
+    height: 1px;
+    background-color: #6c718f;
+    border: none;
+    margin: 2.5% auto;
+}
+
+.redes_sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.redes_sociais_itens {
+    margin-right: 25px;
+}
+
+.redes_sociais_itens:hover {
+    opacity: 0.6;
+}
+
+/* ===== BANNER ===== */
+
+.banner-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.conteudo-banner {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    max-width: 90%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-banner h3 {
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.conteudo-banner p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
