@@ -6,13 +6,13 @@
 
 .hr_eventos{
     width: 95%;
-    height: 3px;
+    height: 1px;
     background-color: #6c718f;
     margin: 2.5%;
 }
 
 .nav_tamanho{
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -26,7 +26,7 @@
 }
 
 .redes_sociais_itens{
-    margin: 10px;
+    margin-right: 25px;
 }
 
 .redes_sociais_itens:hover{
@@ -34,8 +34,48 @@
 }
 
 .nav_topo{
-    background: rgba(249, 249, 249, 0.98);
+    display: flex;
+    border: #6c718f;
     width: 100%;
     padding: 0 !important;
 }
 
+.nav-item{
+    margin-left: 1rem;
+    font-size: large;
+}
+
+.banner-mobile{
+    position: absolute;
+}
+
+.banner{
+    position: absolute;
+    display: none;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 576px){
+    .banner-mobile{
+        display: none;
+    }
+
+    .banner{
+        display: block;
+    }
+}
+
+
+@media (min-width: 992px){
+    .hr_eventos{
+        display: none;
+    }
+    
+    .redes_sociais{
+        display: none;
+    }
+}
