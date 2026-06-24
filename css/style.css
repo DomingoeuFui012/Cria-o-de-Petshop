@@ -19,20 +19,23 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
     display: flex;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255);
+
 }
 
 .nav_topo {
-    display: flex;
     width: 100%;
     padding: 0 !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .nav-item {
     margin-left: 1rem;
     font-size: large;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .hr_eventos {
@@ -47,11 +50,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 4px;
+    margin: 16px;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+
 }
 
 .redes_sociais_itens {
-    margin-right: 25px;
+    margin-right: 5px;
 }
 
 .redes_sociais_itens:hover {
@@ -80,15 +87,28 @@ body {
     transform: translateY(-50%);
     color: #fff;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    font-size: larger;
+    text-align: center;
 }
 
 .conteudo-banner h3 {
-    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    font-size: clamp(3rem, 6vw, 4rem);
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
+
+}
+.accordion{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-.conteudo-banner p {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+.accordion-body{
+    height: 140px;
+    overflow: auto;
 }
+
+/* ===== Carrosel ====== */
+
