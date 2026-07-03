@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -120,17 +121,20 @@
                 </h3>
             </div>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide">
+
+        <!-- Carrosel de vendas de produtos -->
+        <div id="carouselProdutos" class="carousel slide">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
+            <h2 id="linha-nexgard">LINHA NEXGARD<sup>®</sup></h2>
             <div class="carousel-inner">
-                <h2 id="linha-nexgard">LINHA NEXGARD<sup>®</sup></h2>
+
                 <div class="carousel-item active">
 
                     <div class="carrosel-conteudo ">
@@ -159,18 +163,17 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
+        <!-- Videos -->
         <div class="video">
             <img src="./img/substituto-video.jpg" alt="">
             <h2>Como dar NexGard<sup>®</sup></h2>
@@ -178,80 +181,160 @@
             <a href="#">Saiba Mais</a>
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
+        <!-- Carrossel de comentários -->
+        <div id="carouselComentarios" class="carousel slide">
+
+            <!-- Parte de Conteudo Carrosel -->
             <div class="carousel-inner">
-                <div class="carousel-item active comentarios">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg">
-                        <g fill="#C9C4F5">
-                            <path d="M2 4h18v20H11v17L2 33V4z" />
-                            <path d="M28 4h18v20H37v17l-9-8V4z" />
-                        </g>
-                    </svg>
-                    <h4>Gosto do resultado nos meus cães</h4>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg-invertida">
-                        <g fill="#C9C4F5">
-                            <path d="M2 4h18v20H11v17L2 33V4z" />
-                            <path d="M28 4h18v20H37v17l-9-8V4z" />
-                        </g>
-                    </svg>
-                    <div class="pessoas">
-                        <h5>- Vladimir Ramos</h5>
-                        <h6>em Facebook NexGard Brasil</h6>
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="comentarios">
+                        <div class="texto-comentario">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg">
+                                <g fill="#C9C4F5">
+                                    <path d="M2 4h18v20H11v17L2 33V4z" />
+                                    <path d="M28 4h18v20H37v17l-9-8V4z" />
+                                </g>
+                            </svg>
+
+                            <h4>
+                                É ótimo! Depois que passei a dar
+                                NexGard<sup>®</sup> para meus filhos de
+                                quatro patas nunca mais vi carrapatos
+                                e pulgas.
+                            </h4>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg-invertida">
+                                <g fill="#C9C4F5">
+                                    <path d="M2 4h18v20H11v17L2 33V4z" />
+                                    <path d="M28 4h18v20H37v17l-9-8V4z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="pessoas">
+                            <h5>Vilma Maria Cruz</h5>
+                            <h6>Facebook NexGard Brasil</h6>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+
+                    <div class="comentarios">
+                        <div class="texto-comentario">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg">
+                                <g fill="#C9C4F5">
+                                    <path d="M2 4h18v20H11v17L2 33V4z" />
+                                    <path d="M28 4h18v20H37v17l-9-8V4z" />
+                                </g>
+                            </svg>
+
+                            <h4>
+                                Nossos peludinhos livres de pulgas
+                                e carrapatos só com NexGard<sup>®</sup>.
+                                Esse sim é diferente.
+                            </h4>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg-invertida">
+                                <g fill="#C9C4F5">
+                                    <path d="M2 4h18v20H11v17L2 33V4z" />
+                                    <path d="M28 4h18v20H37v17l-9-8V4z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="pessoas">
+                            <h5>Wilson Silla</h5>
+                            <h6>Facebook NexGard Brasil</h6>
+                        </div>
                     </div>
 
+                </div>
 
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+
+                    <div class="comentarios">
+                        <div class="texto-comentario">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg">
+                                <g fill="#C9C4F5">
+                                    <path d="M2 4h18v20H11v17L2 33V4z" />
+                                    <path d="M28 4h18v20H37v17l-9-8V4z" />
+                                </g>
+                            </svg>
+
+                            <h4>
+                                Gosto do resultado nos meus cães.
+                            </h4>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45" class="aspas-svg-invertida">
+                                <g fill="#C9C4F5">
+                                    <path d="M2 4h18v20H11v17L2 33V4z" />
+                                    <path d="M28 4h18v20H37v17l-9-8V4z" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="pessoas">
+                            <h5>Vladimir Ramos</h5>
+                            <h6>Facebook NexGard Brasil</h6>
+                        </div>
+
+                    </div>
 
                 </div>
-                <div class="carousel-item comentarios">
 
-                </div>
-                <div class="carousel-item comentarios">
-
-                </div>
             </div>
-            <div class="carousel-footer">
 
-                <div class="carousel-indicators-custom">
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
-                        class="active"></button>
+            <div class="comentarios-navegacao">
 
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <div class="comentarios-indicadores">
 
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselComentarios" data-bs-slide-to="0" class="active">
+                    </button>
+
+                    <button type="button" data-bs-target="#carouselComentarios" data-bs-slide-to="1">
+                    </button>
+
+                    <button type="button" data-bs-target="#carouselComentarios" data-bs-slide-to="2">
+                    </button>
+
                 </div>
 
-                <div class="carousel-controls">
-                    <button class="carousel-control-prev-custom" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
+                <div class="comentarios-setas">
+
+                    <button class="seta" type="button" data-bs-target="#carouselComentarios" data-bs-slide="prev">
+
                         ❮
+
                     </button>
 
-                    <button class="carousel-control-next-custom" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
+                    <button class="seta" type="button" data-bs-target="#carouselComentarios" data-bs-slide="next">
+
                         ❯
+
                     </button>
+
                 </div>
 
             </div>
+
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 45">
-            <g fill="#C9C4F5">
-                <path d="M2 4h18v20H11v17L2 33V4z" />
-                <path d="M28 4h18v20H37v17l-9-8V4z" />
-            </g>
-        </svg>
+        <div class="onde-comprar">
+            <h2>Onde Comprar NexGard<sup>®</sup></h2>
+            <p>Este é o primeiro passo para dar ao seu cão a proteção número 1 contra pulgas e carrapatos (Fonte:
+                Vetnosis)</p>
+            <div class="caixa">
+                <h3>Faça uma pesquisa aqui e experimente NexGard<sup>®</sup>!</h3>
+                <form action="">
+                    <input type="text" id="local" placeholder="Digite cidade, estado ou CEP">
+                </form>
+            </div>
 
-
-
+        </div>
     </main>
 
 
@@ -259,7 +342,7 @@
 
 
     <!-- Não caia em golpes. depois tem que abrir -->
-    <section>
+    <!-- <section>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -293,15 +376,29 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
-    <footer>
+    <!-- <footer>
 
-    </footer>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        const carousel = document.querySelector("#carouselComentarios");
+
+        carousel.addEventListener("slid.bs.carousel", function (e) {
+
+            const indicadores = document.querySelectorAll(".comentarios-indicadores button");
+
+            indicadores.forEach(btn => btn.classList.remove("active"));
+
+            indicadores[e.to].classList.add("active");
+
+        });
+    </script>
 </body>
 
 </html>
