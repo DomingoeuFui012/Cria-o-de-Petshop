@@ -1,4 +1,4 @@
-/* --- Para não interferir no bootstrap --- */
+* --- Para não interferir no bootstrap --- */
 *,
 *::before,
 *::after {
@@ -13,7 +13,7 @@ body {
 
 .navbar {
     padding: 0;
-    margin: 0;
+    margin: 0 ;
 }
 
 .nav_tamanho {
@@ -26,7 +26,7 @@ body {
 
 }
 
-.navbar .nav_topo {
+.nav_topo {
     width: 100%;
     padding: 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -94,6 +94,7 @@ body {
 }
 
 .conteudo-banner h3 {
+    width: 100%;
     font-size: clamp(3rem, 6vw, 4rem);
     font-weight: 700;
     letter-spacing: 1px;
@@ -362,7 +363,7 @@ body {
 /* ===== Onde Comprar ===== */
 .onde-comprar{
     width: 80%;
-    height: 420px;
+    height: 520px;
     background-color: #0144a7;
     display: flex;
     flex-direction: column;
@@ -375,26 +376,115 @@ body {
 .onde-comprar h2{
     font-size: 2.8rem;
     text-align: center;
+    margin: 16px
 }
 
 
 .caixa{
-    padding: 15px 15px;
+    margin: 32px 0 32px 0 ;
+    padding: 25px 25px;
     background-color: #fff;
-    color: black;
+    color: black; 
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .caixa h3{
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caixa input{
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* ==== Logo e redes sociais ==== */
+.final{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+/* ==== rodape ==== */
+.footer-top{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa01{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.caixa01 img{
+    width: 180px;      /* ajuste conforme preferir */
+    max-width: 100%;
+    height: auto;
+}
+
+.caixa02,
+.caixa03,
+.caixa04{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.caixa02 h4,
+.caixa03 h4,
+.caixa04 h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.caixa02 a,
+.caixa03 a,
+.caixa04 a{
+    text-decoration: none;
+    color: #333;
+}
+
+.caixa02 a:hover,
+.caixa03 a:hover,
+.caixa04 a:hover{
+    color: #007dba;
+}
+
+/* ==== Rodape 'nao caia em golpes' ==== */
+.footer-bottom{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
-
-
-
 /* ===== Parte da Responsividade ===== */
+@media (min-width: 992px) {
+    /* ==== navegação ===== */ 
+    .nav_topo {
+        box-shadow: none;
+        justify-content: flex-end;
+    }
 
-@media (max-width: 767px) {
+    .nav_tamanho{
+        justify-content: space-between;
+    }
+
+
     .banner-img {
         height: 75vh;
         /* mais compacto no mobile */
